@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Sorting Algorithms Visualizer</h1>
+    <nav>
+        <div id="bars" class="flex-container"></div>
+        <br/><br/>
+        <div class="row">
+            <div class="btns1" id="btns1">
+                <button type="button" class="newArray" id="btn1">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">
+                    <label for="arr_sz">size</label>
+                    <input id="arr_sz" type="range" min="5" max="50" step=1 value=30>
+                </span>
+                <span id="speed">
+                    <label for="speed_input">speed</label>
+                    <input id="speed_input" type="range" min="5" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+        </div>
+        <div class="btns2">
+            <button type="button" class="btn2 bubbleSort">Bubble Sort</button>
+            <button type="button" class="btn2 selectionSort">Selection Sort</button>
+            <button type="button" class="btn2 insertionSort">Insertion Sort</button>
+            <button type="button" class="btn2 quickSort">Quick Sort</button>
+            <button type="button" class="btn2 mergeSort">Merge Sort</button>
+        </div>
+    </nav>
+    <div class="links">
+        <script src="Javascript/Sorting.js"></script>
+        <script src="Javascript/Bubble.js"></script>
+        <script src="Javascript/Insertion.js"></script>
+        <script src="Javascript/Merge.js"></script>
+        <script src="Javascript/Quick.js"></script>
+        <script src="Javascript/Selection.js"></script>
+    </div>
+</body>
+</html>
